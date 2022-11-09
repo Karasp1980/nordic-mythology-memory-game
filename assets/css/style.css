@@ -1,58 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100vh;
-    background: #A43F2D;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 100%;  
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .title{
-    margin: 1%;
-    text-align: left;
-    letter-spacing: 2px;
-  }
+body {
+  height: 100vh;
+  background-image: url("../images/vasenbakgrund.jpeg");
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%;  
+  background-size: cover;
+}
 
-  .memory-game {
-    width: 640px;
-    height: 640px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    border: 5px groove;
-  }
+.title{
+  margin: 2% 5%;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+
+.game-info-container {
+  text-align: center;
+  padding: 0 10px;
+  font-size: 150%;
+}
+
+.game-info {
   
-  .memory-card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    margin: 5px;
-    position: relative;
-    transform: scale(1);
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-    border: 5px groove;
-  }
-  
-  .memory-card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
-  }
-  
-  .card-back,
-  .card-front {
-    width: 100%;
-    height: 100%;
-    padding: 5%;
-    position: absolute;
-    border-radius: 5px;
-    background: white;
-  }
-  
- 
+}
+
+.memory-game {
+  width: 510px;
+  height: 680px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px groove;
+
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 1%;
+  position: relative;
+  transform: scale(1);
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  border: 5px groove;
+}
+
+.memory-card:active {
+  transform: scale(0.90);
+  transition: transform .2s;
+}
+
+.card-back,
+.card-front {
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  position: absolute;
+  background: white;
+}
    
+.gameinfo-button {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: #A43F2D;
+  border: 5px groove;
+  padding: 0.5%;
+  font-size: 100%;
+  background: white;
+  cursor: pointer;
+  transition: 1s;
+  text-align: center;
+  
+}
+
+.gameinfo-button:hover {
+  background: white;
+  color: #A43F2D
+  text-decoration: none;
+  transition: 1s;
+  
+}

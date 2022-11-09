@@ -19,6 +19,15 @@
         <h1 class="title">Nordic Mythology Memory Game</h1>
  
          <!-- Memory game container -->
+
+         <div class="game-info-container">
+          <div onclick="flipcard()" class="game-info">
+            <span class="timer">Timer: 0:00</span>
+          </div>
+          <div class="game-info"> Moves:
+            <span class="moves">0</span>
+          </div>
+        </div>
          
          <section class="memory-game">
 
@@ -33,57 +42,81 @@
         
             <div class="memory-card" data-image="haxa">
                 <img class="card-front" src="assets/images/haxa.jpg" alt="haxa">
-              <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+             <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
             </div>
             <div class="memory-card" data-image="haxa">
                 <img class="card-front" src="assets/images/haxa.jpg" alt="haxa">
-              <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+            <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
             </div>
-        
-            <div class="memory-card" data-image="horn-per">
-                <img class="card-front" src="assets/images/horn-per.jpg" alt="horn-per">
-              <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
-            </div>
-            <div class="memory-card" data-image="horn-per">
-                <img class="card-front" src="assets/images/horn-per.jpg" alt="horn-per">
-              <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
-            </div>
+
         
             <div class="memory-card" data-image="jatten">
                 <img class="card-front" src="assets/images/jatten.jpg" alt="jatten">
-              <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+                <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
             </div>
             <div class="memory-card" data-image="jatten">
-                <img class="card-front" src="assets/images/jatten.jpg" alt="jatten">
+              <img class="card-front" src="assets/images/jatten.jpg" alt="jatten">
               <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
             </div>
         
             <div class="memory-card" data-image="nacken">
-                <img class="card-front" src="assets/images/nacken.jpg" alt="nacken">
+              <img class="card-front" src="assets/images/nacken.jpg" alt="nacken">
               <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
             </div>
             <div class="memory-card" data-image="nacken">
                 <img class="card-front" src="assets/images/nacken.jpg" alt="nacken">
               <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
             </div>
-
-            <div class="memory-card" data-image="strandvaskare">
-                <img class="card-front" src="assets/images/strandvaskare.jpg" alt="strandvaskare">
+                     
+            <div class="memory-card" data-image="tomte">
+              <img class="card-front" src="assets/images/tomte.jpeg" alt="tomte">
               <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
-            </div>
+          </div>
 
-            <div class="memory-card" data-image="strandvaskare">
-                <img class="card-front" src="assets/images/strandvaskare.jpg" alt="strandvaskare">
+          <div class="memory-card" data-image="tomte">
+              <img class="card-front" src="assets/images/tomte.jpeg" alt="tomte">
               <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
-            </div>
+          </div>
 
-            
-          
+          <div class="memory-card" data-image="troll">
+              <img class="card-front" src="assets/images/troll.jpg" alt="troll">
+              <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+          </div>
+
+          <div class="memory-card" data-image="troll">
+              <img class="card-front" src="assets/images/troll.jpg" alt="troll">
+              <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+          </div>
+
+          <div class="memory-card" data-image="tomte">
+            <img class="card-front" src="assets/images/tomte.jpeg" alt="tomte">
+          <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+        </div>
+
+        <div class="memory-card" data-image="tomte">
+          <img class="card-front" src="assets/images/tomte.jpeg" alt="tomte">
+        <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+      </div>
+
+
+          <div class="memory-card" data-image="troll">
+              <img class="card-front" src="assets/images/troll.jpg" alt="troll">
+            <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+          </div>
+
+          <div class="memory-card" data-image="troll">
+              <img class="card-front" src="assets/images/troll.jpg" alt="troll">
+            <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
+          </div>
+
 
 
         </section>
 
-
+        <div>
+            <button class="gameinfo-button" onclick="reset()">Reset Game</button> <button id="howto-btn" class="gameinfo-button">How to
+            Play</button>
+        </div>
 
         <script src="scripts.js"></script>
 </body>
