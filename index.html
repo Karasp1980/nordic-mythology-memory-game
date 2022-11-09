@@ -19,7 +19,7 @@
         <h1 class="title">Nordic Mythology Memory Game</h1>
  
          <!-- Memory game container -->
-
+      <div class="game-container">
          <div class="game-info-container">
           <div onclick="flipcard()" class="game-info">
             <span class="timer">Timer: 0:00</span>
@@ -88,35 +88,18 @@
               <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
           </div>
 
-          <div class="memory-card" data-image="tomte">
-            <img class="card-front" src="assets/images/tomte.jpeg" alt="tomte">
-          <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
-        </div>
-
-        <div class="memory-card" data-image="tomte">
-          <img class="card-front" src="assets/images/tomte.jpeg" alt="tomte">
-        <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
-      </div>
-
-
-          <div class="memory-card" data-image="troll">
-              <img class="card-front" src="assets/images/troll.jpg" alt="troll">
-            <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
-          </div>
-
-          <div class="memory-card" data-image="troll">
-              <img class="card-front" src="assets/images/troll.jpg" alt="troll">
-            <img class="card-back" src="assets/images/lyktgubbe.jpeg" alt="hide-card">
-          </div>
+          
 
 
 
         </section>
 
-        <div>
+        <div class="button-container">
             <button class="gameinfo-button" onclick="reset()">Reset Game</button> <button id="howto-btn" class="gameinfo-button">How to
             Play</button>
         </div>
+
+      </div>
 
         <script src="scripts.js"></script>
 </body>
