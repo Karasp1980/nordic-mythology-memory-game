@@ -22,8 +22,6 @@ body {
   letter-spacing: 2px;
 }
 
-.game-container{}
-
 
 .game-info-container {
   padding: 1%;
@@ -38,29 +36,28 @@ body {
 }
 
 .memory-game {
-  width: 500px;
+  width: 375px;
   height: 500px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   border: 5px groove;
   /*background-color: white;*/
+  perspective: 1000px;
 }
 
 .memory-card {
   width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
+  height: calc(25% - 10px);
   margin: 5px;
   position: relative;
   transform: scale(1);
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
   border: 5px groove;
+  transform-style: preserve-3d;
+  transition: transform .5s;
 }
 
-.memory-card:active {
-  transform: scale(0.90);
-  transition: transform .2s;
-}
 
 .card-back,
 .card-front {
@@ -69,6 +66,7 @@ body {
   padding: 1%;
   position: absolute;
   background: white;
+  backface-visibility: hidden;
 }
 
 .button-container{
@@ -98,4 +96,26 @@ body {
   transition: 1s;  
 }
 
+.memory-card:active {
+  transform: scale(0.8);
+  transition: transform .2s;
+}
+
+/* When flip class is present (memory card clicked), rotate the clicked memory card 180deg (around the Y axis)*/
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+
+/* Rotate memory card 180deg (round Y axis) so you can see the front card motive*/
+.card-front {
+  transform: rotateY(180deg);
+}
+
+
+/* Apply 3d effect to the memory cards */
+.memory-card{
+  transform-style: preserve-3d;
+
+}
 

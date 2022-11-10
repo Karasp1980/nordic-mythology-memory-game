@@ -111,4 +111,4 @@ The link can be found here: [Deployed site]()
 
 #### The following sites has also been helpful:
 * [W3Schools](https://www.w3schools.com/) 
-* [Marina Ferrerira, GitHub](https://github.com/code-sketch/memory-game) 
+* [Marina Ferrerira, GitHub](https://github.com/code-sketch/memory-game) + [youtube tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek)
