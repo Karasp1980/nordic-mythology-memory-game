@@ -1,10 +1,12 @@
 const cards = document.querySelectorAll('.memory-card');
 
-let hasFlippedCard = false; /* When starting the game no card has been flipped yet.*/
-let firstCard, secondCard; 
-let lockBoard = false;
+let hasFlippedCard = false; //When starting the game no card has been flipped yet.
+let firstCard, secondCard; // First clicked card and second clicked card in order to check for match
+let lockBoard = false;  
+const moveCounter = document.querySelector(".moves"); 
 
 
+/* flipCard function with help from https://github.com/code-sketch/memory-game*/
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -12,7 +14,7 @@ function flipCard() {
   this.classList.add('flip');
 
   if (!hasFlippedCard) {
-    /*If hasFlippedCard is false (if it is the first time the player flippes a card), execute the following */
+    /*If hasFlippedCard is false, execute the following */
     hasFlippedCard = true;
     firstCard = this;
 
@@ -38,9 +40,9 @@ function disableCards() {
   resetBoard();
 }
 
-// Not a match
-      //If not a match remove the flip class from the memory-card after 1500ms/1,5s in order for these memor-cards 
-      //to be flipped back and in the game agin after that time.
+/*Not a match
+  If not a match remove the flip class from the memory-card after 1000ms/1s in order for these memor-cards 
+  to be flipped back and in the game agin after that time.*/
 function unflipCards() {
   lockBoard = true;
 
@@ -49,7 +51,10 @@ function unflipCards() {
     secondCard.classList.remove('flip');
 
     resetBoard();
-  }, 1500);
+  }, 1000);
+  
+  // Add move 
+  addMove();
 }
 
 function resetBoard() {
@@ -59,7 +64,7 @@ function resetBoard() {
 
 (function shuffle() {
   cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 12);
+    let randomPos = Math.floor(Math.random() * 16);
     card.style.order = randomPos;
   });
 })();
@@ -68,4 +73,12 @@ function resetBoard() {
 // Event listener listening for click events (on a memory card) which activates the flipCard function.
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-
+ 
+//Move counter
+move = 0;
+moveCounter.innerHtml = 0;
+ 
+ function addMove() {
+     move++;
+     moveCounter.innerHTML = move;
+ }
