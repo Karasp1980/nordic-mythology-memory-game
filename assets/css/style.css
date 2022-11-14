@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 105vh;
   background-image: url("../images/vasenbakgrund.jpeg");
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -86,7 +86,7 @@ body {
   cursor: pointer;
   transition: 1s;
   text-align: center;
-  margin: 0 5%;
+  margin: 0 4%;
 }
 
 .gameinfo-button:hover {
@@ -118,4 +118,5 @@ body {
   transform-style: preserve-3d;
 
 }
+
 

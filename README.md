@@ -112,3 +112,4 @@ The link can be found here: [Deployed site]()
 #### The following sites has also been helpful:
 * [W3Schools](https://www.w3schools.com/) 
 * [Marina Ferrerira, GitHub](https://github.com/code-sketch/memory-game) + [youtube tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+* [Iyanuoluwa Odusanya, GitHub](https://riyiike-memorygame-oup61v9vxo5.ws-eu74.gitpod.io/) +[tutorial](https://medium.com/@funkiefabulous003/how-to-build-a-memory-matching-game-in-javascript-fbe0bf9884a2)
