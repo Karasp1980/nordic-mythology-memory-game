@@ -6,7 +6,11 @@ let lockBoard = false;
 const timeCounter = document.querySelector(".timer");
 const moveCounter = document.querySelector(".moves"); 
 let gameOn = false;
-let match=0;
+let match=0; //Used for the match-counter
+let totalMoves=0;
+let totalTime="";
+
+const winMsg = document.getElementById("winMessageWindow");
 
 
 
@@ -48,10 +52,13 @@ function disableCards() {
   secondCard.removeEventListener('click', flipCard);
 
   resetBoard();
-  match++;
+  match++;  // When it´s a match, add to the match counter
   
-  if(match>7){
+  //When all mathes are found (8 pairs) the the timer stops and win message shows
+  if(match===8){
+    totalMoves= move;
     clearInterval(time);
+    winMessage();
   }
 
   
@@ -106,7 +113,7 @@ moveCounter.innerHtml = 0;
  let minutes = 00;
  let seconds = 00;
  let timeStart = false;
- timeCounter.innerHTML = "Time " + minutes + " : " + seconds;
+ timeCounter.innerHTML = "Time: " + minutes + " : " + seconds;
  
  function timer() {
      time = setInterval(function() {
@@ -124,6 +131,16 @@ moveCounter.innerHtml = 0;
   clearInterval(time);
   }
 
+
+   // Win message pop up 
+ function winMessage() {
+  winMsg.style.display = "block";
+  totalTime = timeCounter.innerHTML;
+  // showing moves and time on modal
+  document.getElementById("totalMoves").innerHTML = totalMoves;
+  document.getElementById("totalTime").innerHTML = totalTime;
+  //reset();
+}
 
 
  

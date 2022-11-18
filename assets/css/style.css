@@ -120,3 +120,29 @@ body {
 }
 
 
+#winMessageWindow {
+  /*hidden by defaul*/
+  display: none;  
+  background-color: #A43F2D;
+  color: white;
+  position: fixed;
+  z-index: 5;
+  left: 50vh;
+  top: 25vh;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  border: 5px groove;
+  padding: 5%;
+}
+
+#winHeading{
+  font-size: 200%;
+}
+
+p
+
+{
+  font-size: 150%;
+}
+

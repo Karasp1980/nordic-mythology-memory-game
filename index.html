@@ -7,7 +7,7 @@
         <meta name="description" content="Tor Jäger Illustration Memory Game">
         <meta name="keywords" content="Nordic mythology, Memory game">
         <meta name="Nordic mythology memory game" content="Tor Jäger Illustration">
-        <link rel='shortcut icon' type='image/x-icon' href='backside-favicon.ico'> 
+        <link rel='shortcut icon' type='image/x-icon' href='backside-favicon.ico' /> 
         <link rel="stylesheet" href="assets/css/style.css">
     
         <title>Nordic Mythology Memory Game</title>
@@ -22,7 +22,7 @@
       <div class="game-container">
          <div class="game-info-container">
           <div onclick="flipcard()" class="game-info">
-            <span class="timer"></span>
+            <span class="timer">Timer: 0:00</span>
           </div>
           <div class="game-info"> Moves:
             <span class="moves">0</span>
@@ -30,7 +30,7 @@
         </div>
          
         <!-- Memory cards-->
-         <div class="memory-game">
+         <section class="memory-game">
 
             <div class="memory-card" data-framework="alva">
               <img class="card-front" src="assets/images/alva.jpg" alt="älva">
@@ -108,21 +108,28 @@
       <img class="card-front" src="assets/images/nacken.jpg" alt="näcken">
       <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
   </div>
+        </section>
 
-</div>
 
-
-       
         <div class="button-container">
-          <button class="gameinfo-button" onclick="reset()">Reset Game</button> <button id="howto-btn" class="gameinfo-button">How to
-          Play</button>
+            <button class="gameinfo-button" onclick="resetButton()">Reset Game</button> 
+            <button id="howto-btn" class="gameinfo-button">How to Play</button>
+        </div>
+
       </div>
 
+
+        <!-- Win Message -->
+  
+    <div id="winMessageWindow">
+        <h2 id="winHeading">Congratulations, you won!!</h2>
+        <br>
+        <p>You made <span id="totalMoves"> </span> moves </p>
+        <br>
+        <p><span id="totalTime"></span> </p>
     </div>
-
-      
-
  
+
 
         <script src="assets/js/script.js"></script>
 </body>
