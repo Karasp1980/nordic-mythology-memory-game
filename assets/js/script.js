@@ -6,6 +6,9 @@ let lockBoard = false;
 const timeCounter = document.querySelector(".timer");
 const moveCounter = document.querySelector(".moves"); 
 let gameOn = false;
+let match=0;
+
+
 
 /* flipCard function with help from https://github.com/code-sketch/memory-game*/
 function flipCard() {
@@ -45,10 +48,17 @@ function disableCards() {
   secondCard.removeEventListener('click', flipCard);
 
   resetBoard();
+  match++;
+  
+  if(match>7){
+    clearInterval(time);
+  }
+
+  
 }
 
 /*Not a match
-  If not a match remove the flip class from the memory-card after 1000ms/1s in order for these cards 
+  If not a match remove the flip class from the memory-card after 1000ms(1s) in order for these cards 
   to be flipped back and in the game agin after that time.*/
 function unflipCards() {
   lockBoard = true;
@@ -62,6 +72,7 @@ function unflipCards() {
   
   // Add a move to the move-counter in the addMove function
   addMove();
+  
 }
 
 function resetBoard() {
@@ -92,21 +103,33 @@ moveCounter.innerHtml = 0;
 
  //timer
  let time;
- let minutes = 0;
- let seconds = 0;
+ let minutes = 00;
+ let seconds = 00;
  let timeStart = false;
  timeCounter.innerHTML = "Time " + minutes + " : " + seconds;
  
  function timer() {
      time = setInterval(function() {
          seconds++;
-         if (seconds === 59) {
+         if (seconds === 60) {
              minutes++;
              seconds = 0;
          }
          timeCounter.innerHTML = "Time " + minutes + " : " + seconds;
      }, 1000);
  }
+
+
+  function stopTime() {
+  clearInterval(time);
+  }
+
+
+
+ 
+
+
+
 
 
 
