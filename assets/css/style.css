@@ -123,11 +123,11 @@ body {
 #winMessageWindow {
   /*hidden by defaul*/
   display: none;  
-  background-color: #A43F2D;
-  color: white;
-  position: fixed;
+  background-color: white;
+  color: #A43F2D;
+  position: absolute;
   z-index: 5;
-  left: 50vh;
+  left: 25%;
   top: 25vh;
   width: 50%;
   height: 50%;
@@ -137,7 +137,7 @@ body {
 }
 
 #winHeading{
-  font-size: 200%;
+  font-size: x-large;
 }
 
 p

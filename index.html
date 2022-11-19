@@ -1,136 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Tor Jäger Illustration Memory Game">
-        <meta name="keywords" content="Nordic mythology, Memory game">
-        <meta name="Nordic mythology memory game" content="Tor Jäger Illustration">
-        <link rel='shortcut icon' type='image/x-icon' href='backside-favicon.ico' /> 
-        <link rel="stylesheet" href="assets/css/style.css">
-    
-        <title>Nordic Mythology Memory Game</title>
-    
-    </head>
-    
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tor Jäger Illustration Memory Game">
+  <meta name="keywords" content="Nordic mythology, Memory game">
+  <meta name="Nordic mythology memory game" content="Tor Jäger Illustration">
+  <link rel='shortcut icon' type='image/x-icon' href='backside-favicon.ico' />
+  <link rel="stylesheet" href="assets/css/style.css">
 
-        <h1 class="title">Nordic Mythology Memory Game</h1>
- 
-         <!-- Memory game container -->
-      <div class="game-container">
-         <div class="game-info-container">
-          <div onclick="flipcard()" class="game-info">
-            <span class="timer">Timer: 0:00</span>
-          </div>
-          <div class="game-info"> Moves:
-            <span class="moves">0</span>
-          </div>
+  <title>Nordic Mythology Memory Game</title>
+
+</head>
+
+<body>
+
+    <h1 class="title">Nordic Mythology Memory Game</h1>
+
+    <!-- Memory game container -->
+    <div class="game-container">
+      <div class="game-info-container">
+        <div onclick="flipcard()" class="game-info">
+          <span class="timer">Timer: 0:00</span>
         </div>
-         
+        <div class="game-info"> Moves:
+          <span class="moves">0</span>
+        </div>
+      </div>
+
         <!-- Memory cards-->
-         <section class="memory-game">
+        <section class="memory-game">
 
-            <div class="memory-card" data-framework="alva">
-              <img class="card-front" src="assets/images/alva.jpg" alt="älva">
-              <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-            </div>
-            <div class="memory-card" data-framework="alva">
-              <img class="card-front" src="assets/images/alva.jpg" alt="älva">
-              <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-            </div>
-        
-            <div class="memory-card"  data-framework="haxa">
-                <img class="card-front" src="assets/images/haxa.jpg" alt="häxa">
-                <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-            </div>
-            <div class="memory-card"  data-framework="haxa">
-                <img class="card-front" src="assets/images/haxa.jpg" alt="häxa">
-                <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-            </div>
+          <div class="memory-card" data-framework="alva">
+            <img class="card-front" src="assets/images/alva.jpg" alt="älva">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
+          <div class="memory-card" data-framework="alva">
+            <img class="card-front" src="assets/images/alva.jpg" alt="älva">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
 
-        
-            <div class="memory-card" data-framework="jatten">
-                <img class="card-front" src="assets/images/jatten.jpg" alt="jätten">
-                <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-            </div>
-            <div class="memory-card" data-framework="jatten">
-              <img class="card-front" src="assets/images/jatten.jpg" alt="jätten">
-              <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-            </div>
-        
-            <div class="memory-card" data-framework="lyktgubben">
-              <img class="card-front" src="assets/images/lyktgubben.jpg" alt="lyktgubben">
-              <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-            </div>
-            <div class="memory-card" data-framework="lyktgubben">
-                <img class="card-front" src="assets/images/lyktgubben.jpg" alt="lyktgubben">
-                <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-            </div>
-                     
-            <div class="memory-card" data-framework="tomten">
-              <img class="card-front" src="assets/images/tomten.jpg" alt="tomten">
-              <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          <div class="memory-card"  data-framework="haxa">
+            <img class="card-front" src="assets/images/haxa.jpg" alt="häxa">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
+          <div class="memory-card"  data-framework="haxa">
+            <img class="card-front" src="assets/images/haxa.jpg" alt="häxa">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
+
+
+          <div class="memory-card" data-framework="jatten">
+            <img class="card-front" src="assets/images/jatten.jpg" alt="jätten">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
+          <div class="memory-card" data-framework="jatten">
+            <img class="card-front" src="assets/images/jatten.jpg" alt="jätten">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
+
+          <div class="memory-card" data-framework="lyktgubben">
+            <img class="card-front" src="assets/images/lyktgubben.jpg" alt="lyktgubben">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
+          <div class="memory-card" data-framework="lyktgubben">
+            <img class="card-front" src="assets/images/lyktgubben.jpg" alt="lyktgubben">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
           </div>
 
           <div class="memory-card" data-framework="tomten">
-              <img class="card-front" src="assets/images/tomten.jpg" alt="tomten">
-              <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+            <img class="card-front" src="assets/images/tomten.jpg" alt="tomten">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
+
+          <div class="memory-card" data-framework="tomten">
+            <img class="card-front" src="assets/images/tomten.jpg" alt="tomten">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
           </div>
 
           <div class="memory-card" data-framework="troll">
-              <img class="card-front" src="assets/images/troll.jpg" alt="troll">
-              <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+            <img class="card-front" src="assets/images/troll.jpg" alt="troll">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
           </div>
 
           <div class="memory-card" data-framework="troll">
-              <img class="card-front" src="assets/images/troll.jpg" alt="troll">
-              <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+            <img class="card-front" src="assets/images/troll.jpg" alt="troll">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
           </div>
 
           <div class="memory-card" data-framework="strandvaskare">
             <img class="card-front" src="assets/images/strandvaskare.jpg" alt="strandvaskare">
             <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-        </div>
+          </div>
 
-        <div class="memory-card" data-framework="strandvaskare">
-          <img class="card-front" src="assets/images/strandvaskare.jpg" alt="strandvaskare">
-          <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-      </div>
+          <div class="memory-card" data-framework="strandvaskare">
+            <img class="card-front" src="assets/images/strandvaskare.jpg" alt="strandvaskare">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
 
-      <div class="memory-card" data-framework="nacken">
-        <img class="card-front" src="assets/images/nacken.jpg" alt="näcken">
-        <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-    </div>
+          <div class="memory-card" data-framework="nacken">
+            <img class="card-front" src="assets/images/nacken.jpg" alt="näcken">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
 
-    <div class="memory-card" data-framework="nacken">
-      <img class="card-front" src="assets/images/nacken.jpg" alt="näcken">
-      <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
-  </div>
+          <div class="memory-card" data-framework="nacken">
+            <img class="card-front" src="assets/images/nacken.jpg" alt="näcken">
+            <img class="card-back" src="assets/images/backside.jpg" alt="hide-card">
+          </div>
         </section>
 
 
-        <div class="button-container">
-            <button class="gameinfo-button" onclick="resetButton()">Reset Game</button> 
-            <button id="howto-btn" class="gameinfo-button">How to Play</button>
-        </div>
-
+      <div class="button-container">
+        <button class="gameinfo-button" onclick="resetButton()">Reset Game</button>
+        <button id="howto-btn" class="gameinfo-button">How to Play</button>
       </div>
 
-
-        <!-- Win Message -->
-  
-    <div id="winMessageWindow">
-        <h2 id="winHeading">Congratulations, you won!!</h2>
-        <br>
-        <p>You made <span id="totalMoves"> </span> moves </p>
-        <br>
-        <p><span id="totalTime"></span> </p>
     </div>
- 
 
 
-        <script src="assets/js/script.js"></script>
-</body>
+    <!-- Win Message -->
+
+    <div id="winMessageWindow">
+      <h2 id="winHeading">Congratulations, you won!!</h2>
+      <br>
+      <p>You made <span id="totalMoves"> </span> moves </p>
+      <br>
+      <p><span id="totalTime"></span> </p>
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
