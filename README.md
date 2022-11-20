@@ -2,7 +2,8 @@
 
 # Welcome to Nordic Mythology Memory Game!
 
-#### This website is created 
+#### This website is created to give the user an opportunity to play a flip card memory game with inspering images from the Nordic mythology. It is a game with 8 pairs of images which should be matched. The game is inspired byt the book "Lyktgubben, Skogsfrun och andra väsen" (by Tor Jäger and Jan Jäger) which presents facts and illustrations of nordic mychology creatures. The game could suit any ages.
+
 #### [Deployed site]()
 ------
 ## Responsive
@@ -18,10 +19,10 @@
 ### **index.html**
 
 #### Desktop
-![Wireframe index.html]()
+![Start game](/assets/images/memory-game-desktop-wireframe.jpeg)
 
 #### Mobile
-![Wireframe  index.html mobile]()
+![Start game](/assets/images/memory-game-mobile-wireframe.jpeg)
 
 
 
@@ -106,7 +107,7 @@ The link can be found here: [Deployed site]()
 
 ## Credits
 
-#### A lot of content is reused from torjager.se/torjager.net, for instance som pictures and the about-text. Furhter material/pictures has been provided from the illustrator Tor Jäger who has also given his appproval of using the material for this project. Some of the pictures are also published in his books.
+#### The basic structure with the color scheme and the ide of using the images from the book "Lyktgubben, Skogsfrun och andra väsen" (written and illustrated by Tor Jäger and Jan Jäger) is taken from the project1 [Tor Jäger Illustration](https://github.com/Karasp1980/torjagerillustration). All images (except the front flip card) comes from the book.Furhter material/images (the front flip card) has been provided from the illustrator Tor Jäger who has also given his appproval of using all the material for this project. 
 #### Inspiration and help has also come from the Code Institute projects [Love Maths](https://karasp1980-lovemaths-v0k5uya07g9.ws-eu74.gitpod.io/).
 
 #### The following sites has also been helpful:

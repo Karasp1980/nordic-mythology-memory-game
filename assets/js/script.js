@@ -1,4 +1,4 @@
-
+//EventListener waiting for the DOM content to be loaded to star executing the js 
 document.addEventListener("DOMContentLoaded", function(event) { 
   
   const cards = document.querySelectorAll('.memory-card');
@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let totalTime="";
 
   const winMsg = document.getElementById("winMessageWindow");
+  const howto=document.getElementById("howToPlay");
+  const howtoBtn=document.getElementById("howto-btn");
+  const resetBtn=document.getElementById("reset-btn");
+
+  
 
 
 
@@ -53,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-
+    winMessage();
     resetBoard();
     match++;  // When it´s a match, add to the match counter
     
@@ -116,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let minutes = 00;
   let seconds = 00;
   let timeStart = false;
-  timeCounter.innerHTML = "Time: " + minutes + " : " + seconds;
+  timeCounter.innerHTML = "Time:  " + minutes + " : " + seconds;
   
   function timer() {
       time = setInterval(function() {
@@ -125,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               minutes++;
               seconds = 0;
           }
-          timeCounter.innerHTML = "Time " + minutes + " : " + seconds;
+          timeCounter.innerHTML = "Time:  " + minutes + " : " + seconds;
       }, 1000);
   }
 
@@ -133,6 +138,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function stopTime() {
     clearInterval(time);
     }
+
+
 
 
     // Win message pop up 
@@ -145,6 +152,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //reset();
   }
 
+   // How to play message pop up 
+    howtoBtn.addEventListener("click", howTo); 
+
+   function howTo() {
+    howto.style.display = "block";
+  }
+
+
+  // reset
+  resetBtn.addEventListener("click", reset); 
+
+  function reset(){
+    
+    console.log("Reset here...");
+
+  }
 
 });
 

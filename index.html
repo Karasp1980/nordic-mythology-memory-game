@@ -112,7 +112,7 @@
 
 
       <div class="button-container">
-        <button class="gameinfo-button" onclick="resetButton()">Reset Game</button>
+        <button id="reset-btn" class="gameinfo-button">Reset Game</button>
         <button id="howto-btn" class="gameinfo-button">How to Play</button>
       </div>
 
@@ -122,11 +122,22 @@
     <!-- Win Message -->
 
     <div id="winMessageWindow">
-      <h2 id="winHeading">Congratulations, you won!!</h2>
+      <h2 id="popupHeading">Congratulations, you won!!</h2>
       <br>
       <p>You made <span id="totalMoves"> </span> moves </p>
       <br>
       <p><span id="totalTime"></span> </p>
+      <img id="vasenImage" src="/assets/images/vasenupsidedown.png" alt="Funny nordic mythology creature">
+    </div>
+
+
+    <div id="howToPlay">
+      <h2 id="popupHeading">How to play</h2>
+        <p>To begin the game, click on any card to flip it over</p><br>
+        <p>Only two cards at a time can be flipped</p><br>
+        <p>You need to find all 8 pairs to complete the game.</p><br>
+        <p>GOOD LUCK!</P>
+        <img id="vasenImage" src="/assets/images/vasen.png" alt="Funny nordic mythology creature">
     </div>
 
 
