@@ -172,9 +172,8 @@ p{
 
 #howto-close, #win-close{
   float: right;
-  padding: 5%;
-
-  font-weight: bold;
+  padding: 10%;
+  font-size: x-large;
 }
 
 
