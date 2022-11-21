@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const howtoBtn=document.getElementById("howto-btn");
   const resetBtn=document.getElementById("reset-btn");
 
+  var closeBtn=document.getElementById("close");
+
   
 
 
@@ -159,6 +161,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     howto.style.display = "block";
   }
 
+  //close "How to play" window 
+  closeBtn=addEventListener("click", close); 
+  
+  function close(){
+    this.parentElement.style.display = 'none';
+  }
+
+
 
   // reset
   resetBtn.addEventListener("click", reset); 
@@ -169,7 +179,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   }
 
+  
+
+
 });
+
 
 
 

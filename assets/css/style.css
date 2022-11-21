@@ -115,20 +115,20 @@ body {
 
 }
 
-#winMessageWindow, #howToPlay {
+#winMessageWindow {
   /*hidden by defaul*/
   display: none;  
   background-color: #A43F2D;
   color: white;
   position: absolute;
   z-index: 5;
-  left: 25%;
-  top: 20%;
-  width: 50%;
+  left: 35%;
+  top: 10%;
+  width: 30%;
   min-height: auto;
   text-align: center;
   border: 5px groove;
-  padding: 5%;
+  padding: 0;
   margin: 0;
 }
 
@@ -139,29 +139,76 @@ body {
   color: white;
   position: absolute;
   z-index: 5;
-  left: 25%;
+  left: 35%;
   top: 10%;
-  width: 50%;
+  width: 30%;
   min-height: auto;
   text-align: center;
   border: 5px groove;
-  padding: 5%;
+  padding: 0;
   margin: 0;
 }
 
-#popupHeading{
+
+#headingWin{
   font-size: x-large;
-  padding: 0 0 5% 0;
+  padding: 10% 5% 0 5%;
+}
+
+#headingHowToPlay{
+  font-size: x-large;
+  padding: 10% 5% 5% 5%;
 }
 
 p{
   font-size: large;
+  padding: 0 5% 0 5%;
 }
 
 #vasenImage{
-    padding: 10% 0 0 0;
+    padding: 5% 0 0 0;
     margin: 0;
 }
 
+
+/* media for smaller screens */
+@media (max-width: 1024px) {
+
+  #winMessageWindow, #howToPlay {
+    /*hidden by defaul*/
+    left: 25%;
+    width: 50%; 
+  }
+
+  #headingWin, #headingHowToPlay{
+    font-size: x-large;
+    padding: 10% 0 10% 0;
+  }
+
+  #vasenImage{
+    padding: 0;
+    margin: 0;
+}
+}
+
+/* media for smaller screens */
+@media (max-width: 768px) {
+
+  #winMessageWindow, #howToPlay {
+    /*hidden by defaul*/
+    left: 10%;
+    width: 80%; 
+  }
+
+  #headingWin, #headingHowToPlay{
+    font-size: x-large;
+    padding: 10% 0 10% 0;
+  }
+
+  #vasenImage{
+    padding: 0;
+    margin: 0;
+}
+}
 
 
