@@ -170,6 +170,13 @@ p{
     margin: 0;
 }
 
+#howto-close, #win-close{
+  float: right;
+  padding: 5%;
+
+  font-weight: bold;
+}
+
 
 /* media for smaller screens */
 @media (max-width: 1024px) {

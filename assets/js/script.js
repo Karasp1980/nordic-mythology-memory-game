@@ -13,16 +13,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let totalMoves=0;
   let totalTime="";
 
-  const winMsg = document.getElementById("winMessageWindow");
-  const howto=document.getElementById("howToPlay");
-  const howtoBtn=document.getElementById("howto-btn");
-  const resetBtn=document.getElementById("reset-btn");
+  let winMsg = document.getElementById("winMessageWindow");
+  let howto=document.getElementById("howToPlay");
+  let howtoBtn=document.getElementById("howto-btn");
+  let resetBtn=document.getElementById("reset-btn");
 
-  var closeBtn=document.getElementById("close");
+ 
+  let closeHowto=document.getElementById("howto-close");
+  let closeWin=document.getElementById("win-close");
+
+ 
 
   
-
-
 
   /* flipCard function with help from https://github.com/code-sketch/memory-game*/
   function flipCard() {
@@ -151,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // showing moves and time on modal
     document.getElementById("totalMoves").innerHTML = totalMoves;
     document.getElementById("totalTime").innerHTML = totalTime;
+    closeWin.addEventListener("click", close); 
     //reset();
   }
 
@@ -159,13 +162,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
    function howTo() {
     howto.style.display = "block";
+    closeHowto.addEventListener("click", close); 
   }
 
   //close "How to play" window 
-  closeBtn=addEventListener("click", close); 
+  
   
   function close(){
-    this.parentElement.style.display = 'none';
+    howto.style.display = "none";
+    winMsg.style.display="none";
   }
 
 
