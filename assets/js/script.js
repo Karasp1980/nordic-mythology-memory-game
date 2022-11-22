@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let lockBoard = false;  
   const timeCounter = document.querySelector(".timer");
   const moveCounter = document.querySelector(".moves"); 
-  let gameOn = false;
+  let gameOn = false; 
   let match=0; //Used for the match-counter
   let totalMoves=0;
   let totalTime="";
@@ -17,16 +17,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let howto=document.getElementById("howToPlay");
   let howtoBtn=document.getElementById("howto-btn");
   let resetBtn=document.getElementById("reset-btn");
-
- 
   let closeHowto=document.getElementById("howto-close");
   let closeWin=document.getElementById("win-close");
+  
 
- 
+  //Events
+   cards.forEach(card => card.addEventListener('click', flipCard));   //Event listener listening for click events (on a memory card) which activates the flipCard function.
+
+   resetBtn.addEventListener("click", reset); //Event listener listening for clicks on the reset button.
+
+   howtoBtn.addEventListener("click", howTo); //Event listener listening for clicks on the "How to play"-button
 
   
 
-  /* flipCard function with help from https://github.com/code-sketch/memory-game*/
+  // flipCard function with help from https://github.com/code-sketch/memory-game
   function flipCard() {
     if (!gameOn) {
       gameOn = true;
@@ -45,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       return;
     }
 
-    // second click
+    //Second click
     secondCard = this;
 
     checkForMatch();
@@ -62,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-    winMessage();
     resetBoard();
     match++;  // When it´s a match, add to the match counter
     
@@ -94,22 +97,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
   }
 
+
+// Reset board
   function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
   }
 
- // Card shuffle
+// Card shuffle
  function shuffle() {
   cards.forEach(cards => {
       let randomPosition = Math.floor(Math.random() * 16);
       cards.style.order = randomPosition;
   });
-
 }
-
-  // Event listener listening for click events (on a memory card) which activates the flipCard function.
-  cards.forEach(card => card.addEventListener('click', flipCard));
 
   //Move counter
   let move = 0;
@@ -144,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-    // Win message pop up 
+  // Win message pop up 
   function winMessage() {
     winMsg.style.display = "block";
     totalTime = timeCounter.innerHTML;
@@ -152,20 +153,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.getElementById("totalMoves").innerHTML = totalMoves;
     document.getElementById("totalTime").innerHTML = totalTime;
     closeWin.addEventListener("click", close); 
-    //reset();
+    reset();
   }
 
    // How to play message pop up 
-    howtoBtn.addEventListener("click", howTo); 
-
    function howTo() {
     howto.style.display = "block";
     closeHowto.addEventListener("click", close); 
   }
 
-  //close "How to play" window 
-  
-  
+  //close "How to play" or "Win message" popup window
   function close(){
     howto.style.display = "none";
     winMsg.style.display="none";
@@ -173,11 +170,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   // reset
-  resetBtn.addEventListener("click", reset); 
-
   function reset(){
-    
-    console.log("Reset here...");
     hasFlippedCard = false;
     [firstCard, secondCard] = [null, null];
     stopTime();
@@ -185,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     timeStart = false;
     seconds = 0;
     minutes = 0;
-    timeCounter.innerHTML = "Timer 0:00";
+    timeCounter.innerHTML = "Timer 0:0";
     move = 0;
     moveCounter.innerHTML = 0;
     match = 0;
@@ -195,12 +188,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   }
 
-  
+  reset()
 
 });
-
-
-
 
 
 
