@@ -99,17 +99,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     [firstCard, secondCard] = [null, null];
   }
 
-  (function shuffle() {
-    cards.forEach(card => {
-      let randomPos = Math.floor(Math.random() * 16);
-      card.style.order = randomPos;
-    });
-  })();
+ // Card shuffle
+ function shuffle() {
+  cards.forEach(cards => {
+      let randomPosition = Math.floor(Math.random() * 16);
+      cards.style.order = randomPosition;
+  });
 
+}
 
   // Event listener listening for click events (on a memory card) which activates the flipCard function.
   cards.forEach(card => card.addEventListener('click', flipCard));
-
 
   //Move counter
   let move = 0;
@@ -138,11 +138,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }, 1000);
   }
 
-
     function stopTime() {
     clearInterval(time);
     }
-
 
 
 
@@ -174,20 +172,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
 
-
   // reset
   resetBtn.addEventListener("click", reset); 
 
   function reset(){
     
     console.log("Reset here...");
+    hasFlippedCard = false;
+    [firstCard, secondCard] = [null, null];
+    stopTime();
+    gameOn = false;
+    timeStart = false;
+    seconds = 0;
+    minutes = 0;
+    timeCounter.innerHTML = "Timer 0:00";
+    move = 0;
+    moveCounter.innerHTML = 0;
+    match = 0;
+    cards.forEach(cardReset => cardReset.classList.remove('flip'));
+    shuffle();
+    cards.forEach(card => card.addEventListener('click', flipCard));
 
   }
 
   
 
-
 });
+
+
+
+
+
+
 
 
 

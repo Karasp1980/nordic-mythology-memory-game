@@ -123,7 +123,7 @@ body {
   position: absolute;
   z-index: 5;
   left: 35%;
-  top: 10%;
+  top: 25%;
   width: 30%;
   min-height: auto;
   text-align: center;
@@ -152,12 +152,12 @@ body {
 
 #headingWin{
   font-size: x-large;
-  padding: 10% 5% 0 5%;
+  padding: 15% 5% 0 5%;
 }
 
 #headingHowToPlay{
   font-size: x-large;
-  padding: 10% 5% 5% 5%;
+  padding: 15% 5% 10% 5%;
 }
 
 p{
@@ -174,25 +174,27 @@ p{
   float: right;
   padding: 10%;
   font-size: x-large;
+  margin: 0;
+  padding: 5%;
 }
 
 
 /* media for smaller screens */
 @media (max-width: 1024px) {
-
-  #winMessageWindow, #howToPlay {
-    /*hidden by defaul*/
+  
+  #howToPlay {
     left: 25%;
     width: 50%; 
   }
 
-  #headingWin, #headingHowToPlay{
-    font-size: x-large;
-    padding: 10% 0 10% 0;
+  #winMessageWindow {
+    top: 15%;
+    left: 25%;
+    width: 50%; 
   }
 
   #vasenImage{
-    padding: 0;
+    padding: 10% 5% 5% 5%;
     margin: 0;
 }
 }
@@ -200,21 +202,20 @@ p{
 /* media for smaller screens */
 @media (max-width: 768px) {
 
-  #winMessageWindow, #howToPlay {
+  #winMessageWindow  {
     /*hidden by defaul*/
-    left: 10%;
+    top: 10%;
+    left: 10% ;
     width: 80%; 
   }
 
-  #headingWin, #headingHowToPlay{
-    font-size: x-large;
-    padding: 10% 0 10% 0;
+   #howToPlay  {
+    /*hidden by defaul*/
+    top: 3%;
+    left: 10% ;
+    width: 80%; 
   }
 
-  #vasenImage{
-    padding: 0;
-    margin: 0;
-}
 }
 
 
