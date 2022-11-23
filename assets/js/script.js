@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+    winMessage();
     resetBoard();
     match++;  // When it´s a match, add to the match counter
     

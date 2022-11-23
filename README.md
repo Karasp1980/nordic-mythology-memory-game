@@ -16,13 +16,29 @@
 ## Wireframes
 
 #### Wireframes were made by using [Balsamiq](https://balsamiq.com/)
-### **index.html**
+### **Memory game**
 
 #### Desktop
 ![Start game](/assets/images/memory-game-desktop-wireframe.jpeg)
 
 #### Mobile
 ![Start game](/assets/images/memory-game-mobile-wireframe.jpeg)
+
+### **"How to play" popup window**
+
+#### Desktop
+![Start game](/assets/images/memory-game-desktop-howtoplay.jpeg)
+
+#### Mobile
+![Start game](/assets/images/memory-game-mobile-howtoplay.jpeg)
+
+### **"Win message" popup window**
+
+#### Desktop
+![Start game](/assets/images/memory-game-desktop-win.jpeg)
+
+#### Mobile
+![Start game](/assets/images/memory-game-mobile-win.jpeg)
 
 
 
