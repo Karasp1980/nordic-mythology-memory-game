@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-    winMessage();
+    
     resetBoard();
     match++;  // When it´s a match, add to the match counter
     
@@ -124,8 +124,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //timer
   let time;
-  let minutes = 00;
-  let seconds = 00;
+  let minutes = 0;
+  let seconds = 0;
   let timeStart = false;
   timeCounter.innerHTML = "Time:  " + minutes + " : " + seconds;
   
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   }
 
-  reset()
+  reset();
 
 });
 

@@ -1,7 +1,6 @@
-![Tor Jäger Welcome][def]
+![Noedic mythology Memory Game Welcome](/assets/images/memorygame.jpeg)
 
 # Welcome to Nordic Mythology Memory Game!
-
 #### This website is created to give the user an opportunity to play a flip card memory game with inspering images from the Nordic mythology. It is a game with 8 pairs of images which should be matched. The game is inspired byt the book "Lyktgubben, Skogsfrun och andra väsen" (by Tor Jäger and Jan Jäger) which presents facts and illustrations of nordic mychology creatures. The game could suit any ages.
 
 #### [Deployed site]()
@@ -52,12 +51,25 @@
 
 ## Features
 
-### **Heading:**
-#### Tr
+### **Timer:**
+#### The timer starts when the player starts the game, which is when the player clicks the first card. The timer stops when all 8 pairs are found and the total time is also displayed in the Win popup window which shows when the game is over (all 8 pairs are found). The purpose of the timer is to provide the player whith the time info and to encourge the player to find all pairs as fast as possible, and also try to beat the time. It is placed in the top left side of the memory game in order to be seen while playing.
 
-### **Navbar:**
+### **Moves:**
+#### The move detects the number of moves the player makse (one move = clicking two cards). The purpose of the move counter is to provide the player whith the info and to encourge the player to find all pairs in as few moves as possible, and also try to beat the number. It is placed in the top right side of the memory game in order to be seen while playing.
+![]()
+
+### **Memory game:**
 #### The
 ![]()
+
+### **Reset button:**
+#### The reset button resets the whole game when clicked, which means the timer, moves counter is reset to 0 and the memory game is reset from start to be ready (and the cards are shuffled) to start a new game. The button is placed in the bottom left side of the memory game. The purpose of the button is to make it easy for the player to reset the game and start over again.
+![]()
+
+### **"How to play" button:**
+#### When clicking the "How to play" button a popup window should appear with short description on how to play the game. 
+![]()
+
 
 
 
