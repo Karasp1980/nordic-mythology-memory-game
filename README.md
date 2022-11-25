@@ -1,3 +1,40 @@
+
+# Table of Contents
++ [Nordic mythology Memory Game Welcome](# Welcome to Nordic Mythology Memory Game!)
++ [Responsove](## Responsive)
++ [Wireframes](## Wireframes)
+  + [Memory game](### **Memory game**)
+   + [Memory game desktop](#### Desktop)
+   + [Memory game mobile](#### Mobile)
+  + ["How to play"](### **"How to play" popup window**)
+   + ["How to play" desktop](#### Desktop)
+   + ["How to play" mobile](#### Mobile)  
+  + ["Win message" popup](### **"Win message" popup window**)
+   + ["Win message" desktop desktop](#### Desktop)
+   + ["Win message" mobile](#### Mobile)  
++ [Style/design](## Style/design)
+  + [Background image](### **Background image:**)
+  + [Backside card](### **Backside card:**)
+  + [Memory cards](### **Memory cards:**)
++ [Features](## Features)
+  + [Timer](### **Timer:**)
+  + [Moves](### **Moves:**)
+  + [Memory game](### **Memory game:**)
+  + [Reset button](### **Reset button:**)
+  + ["How to play" button](### **"How to play" button:**)
++ [Testing](## Testing)
+  + [HTML](### HTML:)
+  + [css](### CSS:)
+  + [JavaScript](### JavaScript:)
+  + [Accesibility](### Accessability:)
++ [Unfixed bugs](## Unfixed bugs)  
++ [Deployment](## Deployment)  
++ [Media](## Media)  
++ [Credits](## Credits)  
+
+-----
+
+
 ![Noedic mythology Memory Game Welcome](/assets/images/memorygame.jpeg)
 
 # Welcome to Nordic Mythology Memory Game!
@@ -5,6 +42,8 @@
 
 #### [Deployed site]()
 ------
+
+
 ## Responsive
 
 #### The Site is made responsive and checked through [Am I responsive]()
@@ -61,7 +100,7 @@
 #### All the memory cards (8 images) are taken from the book "Lytkgubben, Skogsfrun och andra väsen" and are chosen to make the user inspired by the art work to inspire to play the game. They are chosen to have different colors and style in order to recognice them when playing the game. They also represent the most famouse creatures from the Nordic mythology:
 
 * Älva (Fairy)
-![Fairy](/assets/images/alva.jpg)
+![Fairy]()
 * Häxa (Witch)
 ![Witch]()
 * Jätten (Giant)
@@ -91,12 +130,9 @@
 ![]()
 
 ### **Memory game:**
-#### The memory game is created to 
+#### The memory game is created to be inspiring and easy to play. You click two cards at a time which then make a flip and shows the memory cards underneath the backside-card. If there is a match (same two cards) the card stay open and the player can make a new move, but if there is no match the cards flip back again (after 1s, in order to give the player enough time to memorize the cards) and the player can make a new move. The game is over when all 8 pairs are found.
 ![]()
 
-### **Memory cards:**
-#### The
-![]()
 
 ### **Reset button:**
 #### The reset button resets the whole game when clicked, which means the timer, moves counter is reset to 0 and the memory game is reset from start to be ready (and the cards are shuffled) to start a new game. The button is placed in the bottom left side of the memory game. The purpose of the button is to make it easy for the player to reset the game and start over again.
@@ -134,6 +170,11 @@
 [Jigsaw W3 validator for style.css](https://jigsaw.w3.org/css-validator)
 ![Jigsaw W3 validator]()
 
+### JavaScript:
+#### No errors were returned when style.css passed through the official W3C validator.
+[JSHint](https://jshint.com/)
+![JSHint]()
+
 ### Accessability:
 #### I confirmed that the colors and fonts chosen are easy to read and accesible through lighthouse in devtools.
 ![Lighthouse performance]()
@@ -155,13 +196,6 @@
 The link can be found here: [Deployed site]()
 
 -----
-
-## Content
-
-#### The pictures on the site and in the gallery has been chosen in order to provide a variety of styles.
-
-----
-
 
 ## Media
 

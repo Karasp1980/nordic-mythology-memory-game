@@ -41,7 +41,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   border: 5px groove;
-  /*background-color: white;*/
   perspective: 1000px;
 }
 
