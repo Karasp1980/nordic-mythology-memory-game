@@ -42,14 +42,46 @@
 
 
 ------
-## Style
+## Style/design
 
-#### The colors were chosen in order to have a good contrast between the white and #A43F2D chosen (+ the groove border) in order to make the site easy to read. The readibility was also checked on  [WebAIM](https://webaim.org/resources/contrastchecker) 
+#### The colors were chosen in order to have a good contrast between the white and red #A43F2D chosen (+ the groove border) in order to make the site easy to read. The red #A43F2D was also considered to be a good choice for the nordic mythology theme (a bit like the red color commonly used in the Swedish old folclore and traditions: everything from art and clothing to Falu copper red house paint). The readibility was also checked on  [WebAIM](https://webaim.org/resources/contrastchecker) 
 ![WebAIM contrastchecker](/assets/images/webaim.png)
+
+
+### **Background image:**
+#### The background (from the book "Lyktgubben, Skogsfrun och andra väsen") is chosen to provide a feeling of Nordic mythology and what creatures that hide in the nature without taking to much focus from the game. It should inspire the user to play the game.
+![]()
+
+### **Backside card:**
+#### The backside card is designed (by the illustrator Tor Jäger) to give a clear destinction between fliped cards and the backside card when playing. It is designed to be in the same style as the images in the game and the red background #A43F2D with white text is the same as the color pattern chosen for the game. The icon used is also taken from the book "Lyktgubben, Skogsfrun och andra väsen".
+
+![]()
+
+### **Memory cards:**
+#### All the memory cards (8 images) are taken from the book "Lytkgubben, Skogsfrun och andra väsen" and are chosen to make the user inspired by the art work to inspire to play the game. They are chosen to have different colors and style in order to recognice them when playing the game. They also represent the most famouse creatures from the Nordic mythology:
+
+* Älva (Fairy)
+![Fairy](/assets/images/alva.jpg)
+* Häxa (Witch)
+![Witch]()
+* Jätten (Giant)
+![Giant]()
+* Lyktgubben (Alf with lantern)
+![Alf with lantern]()
+* Tomten (Alf)
+![Alf]()
+* Troll (Troll)
+![Troll]()
+* Strandvaskaren (The drowning ghost)
+![The drowning ghost]()
+* Näcken (The neck)
+![The Neck]()
+
 
 ----
 
 ## Features
+
 
 ### **Timer:**
 #### The timer starts when the player starts the game, which is when the player clicks the first card. The timer stops when all 8 pairs are found and the total time is also displayed in the Win popup window which shows when the game is over (all 8 pairs are found). The purpose of the timer is to provide the player whith the time info and to encourge the player to find all pairs as fast as possible, and also try to beat the time. It is placed in the top left side of the memory game in order to be seen while playing.
@@ -59,6 +91,10 @@
 ![]()
 
 ### **Memory game:**
+#### The memory game is created to 
+![]()
+
+### **Memory cards:**
 #### The
 ![]()
 

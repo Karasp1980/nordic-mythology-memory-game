@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // flipCard function with help from https://github.com/code-sketch/memory-game
   function flipCard() {
     if (!gameOn) {
-      gameOn = true;
+      gameOn = true; 
       timer();
   }
     if (lockBoard) return;
@@ -55,12 +55,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     checkForMatch();
   }
 
-  // Check if the two cards clicked match (firstCard===secondCard)
-  function checkForMatch() {
-    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+ 
+    // Check if the two cards clicked match (firstCard===secondCard)
+    function checkForMatch() {
+      let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
-    isMatch ? disableCards() : unflipCards();
-  }
+      if (isMatch) {
+        disableCards();
+    } else {
+        unflipCards();
+    }
+  
+    }
+  
 
   // When it´s a match, remove eventlisteners of the cards in order to prevent these cards to be clicked again
   function disableCards() {
@@ -122,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       moveCounter.innerHTML = move;
   }
 
-  //timer
+  //timer, with help from https://medium.com/@funkiefabulous003/how-to-build-a-memory-matching-game-in-javascript-fbe0bf9884a2
   let time;
   let minutes = 0;
   let seconds = 0;
@@ -150,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function winMessage() {
     winMsg.style.display = "block";
     totalTime = timeCounter.innerHTML;
-    // showing moves and time on modal
+    // showing moves and time 
     document.getElementById("totalMoves").innerHTML = totalMoves;
     document.getElementById("totalTime").innerHTML = totalTime;
     closeWin.addEventListener("click", close); 
@@ -171,7 +178,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   // reset
-  function reset(){
+  function reset() {
+    //setTimeout is used and set to 500ms/0,5s in order for the user to more clearly see that the reset is executed 
+    setTimeout(() => {
     hasFlippedCard = false;
     [firstCard, secondCard] = [null, null];
     stopTime();
@@ -186,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     cards.forEach(cardReset => cardReset.classList.remove('flip'));
     shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
+  }, 500); 
 
   }
 
