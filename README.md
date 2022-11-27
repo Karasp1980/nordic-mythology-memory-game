@@ -183,7 +183,7 @@
 
 #### I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar. The site has been tested on different physical devices: desktop, laptop, tablet and mobile.
 
-#### I confirmed that the navigaton, header, about, gallery and contact are all readable and easy to understand.
+#### I confirmed that the site index.html with the game is readable and easy to understand.
 
 #### I confirmed that the form works requires entries in every field, will only accept one email in the email field and the submit buttom works.
 
@@ -207,7 +207,7 @@
 
 ### Accessability:
 #### I confirmed that the colors and fonts chosen are easy to read and accesible through lighthouse in devtools.
-![Lighthouse performance]()
+![Lighthouse performance](/assets/images/lighthouse.jpeg)
 
 
 -----
