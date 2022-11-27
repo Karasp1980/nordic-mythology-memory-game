@@ -87,7 +87,7 @@
 ## Style/design
 
 #### The colors were chosen in order to have a good contrast between the white and red #A43F2D chosen (+ the groove border) in order to make the site easy to read. The red #A43F2D was also considered to be a good choice for the nordic mythology theme (a bit like the red color commonly used in the Swedish old folclore and traditions: everything from art and clothing to Falu copper red house paint). The readibility was also checked on  [WebAIM](https://webaim.org/resources/contrastchecker) 
-![WebAIM contrastchecker](/assets/images/webaim.png)
+![WebAIM contrastchecker](/assets/images/webaim.jpeg)
 
 
 ### **Background image:**
@@ -190,6 +190,7 @@
 ## Unfixed bugs
 
 #### No unfixed bugs.
+
 -----
 
 ## Deployment
