@@ -45,8 +45,8 @@
 
 ## Responsive
 
-#### The Site is made responsive and checked through [Am I responsive]()
-![Responsive]()
+#### The Site is made responsive and checked through [Am I responsive](ami.responsivedesign.is)
+![Responsive](/assets/images/memoryresponsive.png)
 
 ----
 
@@ -59,7 +59,6 @@
 #### Desktop
 ![Start game](/assets/images/memory-game-desktop-wireframe.jpeg)
 
-<img src="https://github.com/karasp1980/nordic-mythology-memory-game/assets/images/memory-game-desktop-wireframe.jpeg">
 
 
 #### Mobile
@@ -92,32 +91,58 @@
 
 ### **Background image:**
 #### The background (from the book "Lyktgubben, Skogsfrun och andra väsen") is chosen to provide a feeling of Nordic mythology and what creatures that hide in the nature without taking to much focus from the game. It should inspire the user to play the game.
-![]()
+
+![Background image](/assets/images/vasenbakgrund-small.jpg)
+
 
 ### **Backside card:**
 #### The backside card is designed (by the illustrator Tor Jäger) to give a clear destinction between fliped cards and the backside card when playing. It is designed to be in the same style as the images in the game and the red background #A43F2D with white text is the same as the color pattern chosen for the game. The icon used is also taken from the book "Lyktgubben, Skogsfrun och andra väsen".
 
-![]()
+![Backside card](/assets/images/backside.jpg)
+
 
 ### **Memory cards:**
 #### All the memory cards (8 images) are taken from the book "Lytkgubben, Skogsfrun och andra väsen" and are chosen to make the user inspired by the art work to inspire to play the game. They are chosen to have different colors and style in order to recognice them when playing the game. They also represent the most famouse creatures from the Nordic mythology:
 
+
 * Älva (Fairy)
-![Fairy]()
+
+![Fairy](/assets/images/alva.jpg)
+
+
 * Häxa (Witch)
-![Witch]()
+
+![Witch](/assets/images/haxa.jpg)
+
+
 * Jätten (Giant)
-![Giant]()
+
+![Giant](/assets/images/jatten.jpg)
+
+
 * Lyktgubben (Alf with lantern)
-![Alf with lantern]()
+
+![Alf with lantern](/assets/images/lyktgubben.jpg)
+
+
 * Tomten (Alf)
-![Alf]()
+
+![Alf](/assets/images/tomten.jpg)
+
+
 * Troll (Troll)
-![Troll]()
+
+![Troll](/assets/images/troll.jpg)
+
+
 * Strandvaskaren (The drowning ghost)
-![The drowning ghost]()
+
+![The drowning ghost](/assets/images/strandvaskare.jpg)
+
+
 * Näcken (The neck)
-![The Neck]()
+
+![The Neck](/assets/images/nacken.jpg)
 
 
 ----
@@ -168,8 +193,8 @@
 
 ### HTML:
 #### No errors were returned when passed through the official W3C validator
-[W3 validator]()
-![W3 validator]()
+[W3 validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkarasp1980.github.io%2Fnordic-mythology-memory-game%2F)
+![W3 validator](/assets/images/w3validator.jpeg)
 ### CSS:
 #### No errors were returned when style.css passed through the official W3C validator.
 [Jigsaw W3 validator for style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkarasp1980.github.io%2Fnordic-mythology-memory-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
@@ -177,7 +202,7 @@
 
 ### JavaScript:
 #### No errors were returned when style.css passed through the official W3C validator.
-[JSHint](https://jshint.com/)
+[JSHint](https://jshint.com)
 ![JSHint](/assets/images/jshint.jpg)
 
 ### Accessability:
