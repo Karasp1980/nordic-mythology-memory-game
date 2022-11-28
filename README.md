@@ -2,13 +2,12 @@
 ![Nordic mythology Memory Game Welcome](/assets/images/memorygame.jpeg)
 
 # Welcome to Nordic Mythology Memory Game!
-#### This website is created to give the user an opportunity to play a flip card memory game with inspering images from the Nordic mythology. It is a game with 8 pairs of images which should be matched. The game is inspired byt the book "Lyktgubben, Skogsfrun och andra väsen" (by Tor Jäger and Jan Jäger) which presents facts and illustrations of nordic mychology creatures. The game could suit any ages.
+#### This website is created to give the user an opportunity to play a flip card memory game with inspering images from the Nordic mythology. It is a game with 8 pairs of images which should be matched. The game is inspired byt the book "Lyktgubben, Skogsfrun och andra väsen" (by Tor Jäger and Jan Jäger) which presents facts and illustrations of nordic mychology creatures for children and young adults. The game could suit any ages.
 
 #### [Deployed site](https://karasp1980.github.io/nordic-mythology-memory-game/)
 ------
 
 # Table of Contents
-+ [Nordic mythology Memory Game Welcome](# Welcome to Nordic Mythology Memory Game!)
 + [Responsove](#responsive)
 + [Wireframes](#wireframes)
 + [Style/design](#style-design)
@@ -191,7 +190,7 @@
 
 #### I confirmed that the site index.html with the game is readable and easy to understand.
 
-#### I confirmed that the form works requires entries in every field, will only accept one email in the email field and the submit buttom works.
+#### I confirmed that the game will only accept two clicks (at two different memory cards) at a time (=one move) and also not accept a double click on the same card.
 
 ------
 
@@ -247,7 +246,7 @@ The link can be found here: [Deployed site](https://karasp1980.github.io/nordic-
 
 ## Credits
 
-#### The basic structure with the color scheme and the ide of using the images from the book "Lyktgubben, Skogsfrun och andra väsen" (written and illustrated by Tor Jäger and Jan Jäger) is taken from the project 1 [Tor Jäger Illustration](https://github.com/Karasp1980/torjagerillustration). All images (except the front flip card) comes from the book.Furhter material/images (the front flip card) has been provided from the illustrator Tor Jäger who has also given his appproval of using all the material for this project. 
+#### The basic structure with the color scheme and the ide of using the images from the book "Lyktgubben, Skogsfrun och andra väsen" (written and illustrated by Tor Jäger and Jan Jäger) is taken from the project 1 [Tor Jäger Illustration](https://github.com/Karasp1980/torjagerillustration). All images (except the front flip card) comes from the book. Furhter material/images (the front flip card) has been provided from the illustrator Tor Jäger who has also given his appproval of using all the material for this project. 
 #### Inspiration and help has also come from the Code Institute projects [Love Maths](https://karasp1980-lovemaths-v0k5uya07g9.ws-eu74.gitpod.io/).
 
 #### The following sites has also been helpful:
