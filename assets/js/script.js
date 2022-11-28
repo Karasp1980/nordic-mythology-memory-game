@@ -75,9 +75,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     secondCard.removeEventListener('click', flipCard);
     
     resetBoard();
-    addMove(); 
+    addMove(); // Add a move to the move-counter in the addMove function
     match++;  // When it´s a match, add to the match counter
-    addMove(); 
+    
     
     //When all mathes are found (8 pairs) the the timer stops and win message shows
     if(match===8){
@@ -99,10 +99,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       secondCard.classList.remove('flip');
 
       resetBoard();
+      
+    addMove(); // Add a move to the move-counter in the addMove function
+    
     }, 1000);
     
-    // Add a move to the move-counter in the addMove function
-    addMove();
     
   }
 
