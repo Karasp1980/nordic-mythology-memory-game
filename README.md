@@ -11,15 +11,6 @@
 + [Nordic mythology Memory Game Welcome](# Welcome to Nordic Mythology Memory Game!)
 + [Responsove](#responsive)
 + [Wireframes](#wireframes)
-  + [Memory game](#wireframe-memory-game)
-   + [Memory game desktop](#desktop)
-   + [Memory game mobile](#mobile)
-  + ["How to play"](#how-to-play"-popup-window)
-   + ["How to play" desktop](#howtoplay-esktop)
-   + ["How to play" mobile](#howtoplay-mobile)  
-  + ["Win message" popup](#win-message-popup-window)
-   + ["Win message" desktop desktop](#win-desktop)
-   + ["Win message" mobile](#win-mobile)  
 + [Style/design](#style-design)
   + [Background image](#background-image)
   + [Backside card](#backside-card)
@@ -30,10 +21,12 @@
   + [Memory game](#memory-game)
   + [Reset button](#reset-button)
   + ["How to play" button](#how-to-play-button)
+  + ["How to play" popup window](#how-to-play-popup-window)
+  + [Win popup window](#win-popup-window)
 + [Testing](#testing)
 + [Validator testing](#validator-testing)
-  + [HTML](#HTML)
-  + [CSS](#CSS)
+  + [HTML](#html)
+  + [CSS](#css)
   + [JavaScript](#javascript)
   + [Accesibility](#accessability)
 + [Unfixed bugs](#unfixed-bugs)  
@@ -64,7 +57,7 @@
 #### Mobile
 ![Start game](/assets/images/memory-game-mobile-wireframe.jpeg)
 
-### **"How to play" popup window**
+### **"How to play" popup**
 
 #### Desktop
 ![Start game](/assets/images/memory-game-desktop-howtoplay.jpeg)
@@ -72,7 +65,7 @@
 #### Mobile
 ![Start game](/assets/images/memory-game-mobile-howtoplay.jpeg)
 
-### **"Win message" popup window"**
+### **"Win message" popup**
 
 #### Desktop
 ![Start game](/assets/images/memory-game-desktop-win.jpeg)
@@ -159,7 +152,7 @@
 ![Moves](/assets/images/moves.jpg)
 
 ### **Memory game:**
-#### The memory game is created to be inspiring and easy to play. You click two cards at a time which then make a flip and shows the memory cards underneath the backside-card. If there is a match (same two cards) the card stay open and the player can make a new move, but if there is no match the cards flip back again (after 1s, in order to give the player enough time to memorize the cards) and the player can make a new move. The game is over when all 8 pairs are found.
+#### The memory game is created to be inspiring and easy to play. You click two cards at a time (the game does not aloud clicking more than two cardd at a time) which then make a flip and shows the memory cards underneath the backside-card. If there is a match (same two cards) the cards stay open and the player can make a new move, but if there is no match the cards flip back again (after 1s, in order to give the player enough time to memorize the cards) and the player can make a new move. The game is over when all 8 pairs are found.
 ![Memory game board](/assets/images/memory-game-box.jpg)
 
 
@@ -170,7 +163,20 @@
 ### **"How to play" button:**
 #### When clicking the "How to play" button a popup window should appear with short description on how to play the game. It is placed slightley over the Memory game in order to be easy to locate. 
 
-!["How to play"-button](/assets/images/how-to-play-button.jpg)
+!["How to play"-button](/assets/images/how-to-play-button.jpg) 
+
+
+
+### **"How to play" popup window**
+#### When clicking the "How to play" button a popup window should appear with short description on how to play the game. It has a closing x button in the upper right corner for the user to easily find to close the window.
+
+!["How to play" popup window](/assets/images/how-to-play-popup.jpeg)
+
+### **"Win" popup window**
+#### When the player has finished a game and found all 8 pairs, a win-popup window should appear with a Congratulations message. It also shows the time it took to finish the game and the number of moves in order for the user to beat these scores next time. It has a closing x button in the upper right corner for the user to easily find to close the window.
+
+![Win popup window](/assets/images/win-popup.jpeg)
+
 
 
 
@@ -194,19 +200,24 @@
 ### HTML:
 #### No errors were returned when passed through the official W3C validator
 [W3 validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkarasp1980.github.io%2Fnordic-mythology-memory-game%2F)
+
 ![W3 validator](/assets/images/w3validator.jpeg)
+
 ### CSS:
 #### No errors were returned when style.css passed through the official W3C validator.
 [Jigsaw W3 validator for style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkarasp1980.github.io%2Fnordic-mythology-memory-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+
 ![Jigsaw W3 validator](/assets/images/jigsawCssValidator.jpeg)
 
 ### JavaScript:
 #### No errors were returned when style.css passed through the official W3C validator.
 [JSHint](https://jshint.com)
+
 ![JSHint](/assets/images/jshint.jpg)
 
 ### Accessability:
 #### I confirmed that the colors and fonts chosen are easy to read and accesible through lighthouse in devtools.
+
 ![Lighthouse performance](/assets/images/lighthouse.jpeg)
 
 
@@ -243,5 +254,6 @@ The link can be found here: [Deployed site](https://karasp1980.github.io/nordic-
 * [W3Schools](https://www.w3schools.com/) 
 * [Marina Ferrerira, GitHub](https://github.com/code-sketch/memory-game) + [youtube tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 * [Iyanuoluwa Odusanya, GitHub](https://riyiike-memorygame-oup61v9vxo5.ws-eu74.gitpod.io/) +[tutorial](https://medium.com/@funkiefabulous003/how-to-build-a-memory-matching-game-in-javascript-fbe0bf9884a2)
+* [Alian memory game](https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game)
 * [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
