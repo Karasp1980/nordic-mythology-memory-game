@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       clearInterval(time);
       winMessage();
     }
+    addMove();
 
     
   }

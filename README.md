@@ -223,6 +223,8 @@
 
 #### No unfixed bugs.
 
+#### An issue that accured when first deploying the site on GitHub was that the two images vasen.png and vasenupsidedown.png were not showing on the deployed site. It seemed the file paths had an / in the start, and when removing that the images file paths could be read and the images show correctly on the deployed site.
+
 -----
 
 ## Deployment
@@ -243,7 +245,7 @@ The link can be found here: [Deployed site](https://karasp1980.github.io/nordic-
 
 ## Credits
 
-#### The basic structure with the color scheme and the ide of using the images from the book "Lyktgubben, Skogsfrun och andra väsen" (written and illustrated by Tor Jäger and Jan Jäger) is taken from the project 1 [Tor Jäger Illustration](https://github.com/Karasp1980/torjagerillustration). All images (except the front flip card) comes from the book. Furhter material/images (the front flip card) has been provided from the illustrator Tor Jäger who has also given his appproval of using all the material for this project. 
+#### The basic structure with the color scheme and the ide of using the images from the book "Lyktgubben, Skogsfrun och andra väsen" (written and illustrated by Tor Jäger and Jan Jäger) is taken from the project 1 [Tor Jäger Illustration](https://github.com/Karasp1980/torjagerillustration). All images (except the front backside card) comes from the book. Furhter material/images (the backside card) has been provided from the illustrator Tor Jäger who has also given his appproval of using all the material for this project. 
 #### Inspiration and help has also come from the Code Institute projects [Love Maths](https://karasp1980-lovemaths-v0k5uya07g9.ws-eu74.gitpod.io/).
 
 #### The following sites has also been helpful:
