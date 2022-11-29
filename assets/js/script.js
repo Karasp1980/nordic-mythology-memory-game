@@ -147,10 +147,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }
 
         if(seconds<10){
-          timeCounter.innerHTML = "Time:  " + minutes + " : 0" + seconds;
+          if(minutes<10){
+          timeCounter.innerHTML = "Time:  0" + minutes + " : 0" + seconds;
         }
         else{
+          timeCounter.innerHTML = "Time:  " + minutes + " : 0" + seconds;
+        }
+      }
+        else{
+          if(minutes<10){
+            timeCounter.innerHTML = "Time:  0" + minutes + " : " + seconds;
+          }
+          else{
           timeCounter.innerHTML = "Time:  " + minutes + " : " + seconds;
+          }
         }
       }, 1000);
   }
@@ -196,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     timeStart = false;
     seconds = 0;
     minutes = 0;
-    timeCounter.innerHTML = "Timer 0:0";
+    timeCounter.innerHTML = "Timer 00:00";
     move = 0;
     moveCounter.innerHTML = 0;
     match = 0;
