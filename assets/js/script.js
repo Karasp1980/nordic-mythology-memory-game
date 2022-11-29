@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     timeStart = false;
     seconds = 0;
     minutes = 0;
-    timeCounter.innerHTML = "Timer 00:00";
+    timeCounter.innerHTML = "Time: 00:00";
     move = 0;
     moveCounter.innerHTML = 0;
     match = 0;
