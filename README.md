@@ -151,7 +151,7 @@
 ![Moves](/assets/images/moves.jpg)
 
 ### **Memory game:**
-#### The memory game is created to be inspiring and easy to play. You click two cards at a time (the game does not aloud clicking more than two cardd at a time) which then make a flip and shows the memory cards underneath the backside-card. If there is a match (same two cards) the cards stay open and the player can make a new move, but if there is no match the cards flip back again (after 1s, in order to give the player enough time to memorize the cards) and the player can make a new move. The game is over when all 8 pairs are found.
+#### The memory game is created to be inspiring and easy to play. You click two cards at a time (the game does not aloud clicking more than two cards at a time or double clicking on the same card) which then make a flip and shows the memory cards underneath the backside-card. If there is a match (same two cards) the cards stay open and the player can make a new move, but if there is no match the cards flip back again (after 1s, in order to give the player enough time to memorize the cards) and the player can make a new move. The game is over when all 8 pairs are found.
 ![Memory game board](/assets/images/memory-game-box.jpg)
 
 
@@ -160,19 +160,19 @@
 ![Reset button](/assets/images/reset-button.jpg)
 
 ### **"How to play" button:**
-#### When clicking the "How to play" button a popup window should appear with short description on how to play the game. It is placed slightley over the Memory game in order to be easy to locate. 
+#### When clicking the "How to play" button a popup window should appear with short description of how to play the game. The popup window is placed slightley over the Memory game in order to be easy to locate.
 
 !["How to play"-button](/assets/images/how-to-play-button.jpg) 
 
 
 
 ### **"How to play" popup window**
-#### When clicking the "How to play" button a popup window should appear with short description on how to play the game. It has a closing x button in the upper right corner for the user to easily find to close the window.
+#### When clicking the "How to play" button a popup window should appear with a short description of how to play the game. It has a closing x button in the upper right corner for the user to easily find to close the window.
 
 !["How to play" popup window](/assets/images/how-to-play-popup.jpeg)
 
 ### **"Win" popup window**
-#### When the player has finished a game and found all 8 pairs, a win-popup window should appear with a Congratulations message. It also shows the time it took to finish the game and the number of moves in order for the user to beat these scores next time. It has a closing x button in the upper right corner for the user to easily find to close the window.
+#### When the player has finished a game and found all 8 pairs, a win-popup window should appear with a congratulations message. It also shows the time it took to finish the game and the number of moves in order for the user to beat these scores next time. It has a closing x button in the upper right corner for the user to easily find to close the window.
 
 ![Win popup window](/assets/images/win-popup.jpeg)
 
@@ -185,7 +185,7 @@
 
 #### I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar. The site has been tested on different physical devices: desktop, laptop, tablet and mobile.
 
-#### I confirmed that the site index.html with the game is readable and easy to understand.
+#### I confirmed that the site index.html with the game is readable and easy to understand and all the game functions are working.
 
 #### I confirmed that the game will only accept two clicks (at two different memory cards) at a time (=one move) and also not accept a double click on the same card.
 
@@ -194,19 +194,19 @@
 ## Validator testing
 
 ### HTML:
-#### No errors were returned when passed through the official W3C validator
+#### No errors were returned when passed through the official W3C validator.
 [W3 validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkarasp1980.github.io%2Fnordic-mythology-memory-game%2F)
 
 ![W3 validator](/assets/images/w3validator.jpeg)
 
 ### CSS:
-#### No errors were returned when style.css passed through the official W3C validator.
+#### No errors were returned when passed through the official Jigsaw Css validator.
 [Jigsaw W3 validator for style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkarasp1980.github.io%2Fnordic-mythology-memory-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
 ![Jigsaw W3 validator](/assets/images/jigsawCssValidator.jpeg)
 
 ### JavaScript:
-#### No errors were returned when style.css passed through the official W3C validator.
+#### No errors were returned when script.js was passed through the JSHint validator.
 [JSHint](https://jshint.com)
 
 ![JSHint](/assets/images/jshint.jpg)
@@ -223,7 +223,7 @@
 
 #### No unfixed bugs.
 
-#### An issue that accured when first deploying the site on GitHub was that the two images vasen.png and vasenupsidedown.png were not showing on the deployed site. It seemed the file paths had an / in the start, and when removing that the images file paths could be read and the images show correctly on the deployed site.
+#### An issue that accured when first deploying the site on GitHub was that the two images vasen.png and vasenupsidedown.png were not showing on the deployed site. It seemed the file paths were absolute and had an / in the start, and when removing that the images file paths could be read and the images show correctly on the deployed site.
 
 -----
 
@@ -239,13 +239,13 @@ The link can be found here: [Deployed site](https://karasp1980.github.io/nordic-
 
 ## Media
 
-#### All the images on this page are provided by the illustator Tor Jäger For the social media-links icons [Font Awesome](https://fontawesome.com) has been used. The fonts come from [Google fonts](fonts.google.com).
+#### All the images on this page are provided by the illustator Tor Jäger. For the closing x-links icons [Font Awesome](https://fontawesome.com) has been used. The fonts come from [Google fonts](fonts.google.com).
 
 -----
 
 ## Credits
 
-#### The basic structure with the color scheme and the ide of using the images from the book "Lyktgubben, Skogsfrun och andra väsen" (written and illustrated by Tor Jäger and Jan Jäger) is taken from the project 1 [Tor Jäger Illustration](https://github.com/Karasp1980/torjagerillustration). All images (except the front backside card) comes from the book. Furhter material/images (the backside card) has been provided from the illustrator Tor Jäger who has also given his appproval of using all the material for this project. 
+#### The basic structure with the color scheme and the ide of using the images from the book "Lyktgubben, Skogsfrun och andra väsen" (written and illustrated by Tor Jäger and Jan Jäger) is taken from the CI project 1 [Tor Jäger Illustration](https://github.com/Karasp1980/torjagerillustration). All images (except the backside card) comes from the book. Furhter material/images (the backside card) has been provided from the illustrator Tor Jäger who has also given his appproval of using all the material for this project. 
 #### Inspiration and help has also come from the Code Institute projects [Love Maths](https://karasp1980-lovemaths-v0k5uya07g9.ws-eu74.gitpod.io/).
 
 #### The following sites has also been helpful:

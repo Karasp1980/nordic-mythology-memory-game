@@ -145,7 +145,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
               minutes++;
               seconds = 0;
           }
+
+        if(seconds<10){
+          timeCounter.innerHTML = "Time:  " + minutes + " : 0" + seconds;
+        }
+        else{
           timeCounter.innerHTML = "Time:  " + minutes + " : " + seconds;
+        }
       }, 1000);
   }
 
