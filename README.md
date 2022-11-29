@@ -37,7 +37,7 @@
 
 ## Responsive
 
-#### The Site is made responsive and checked through [Am I responsive](ami.responsivedesign.is)
+#### The Site is made responsive and checked through [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fkarasp1980.github.io%2Fnordic-mythology-memory-game%2F) and also through [Am I responsive](ami.responsivedesign.is)
 ![Responsive](/assets/images/memoryresponsive.png)
 
 ----
